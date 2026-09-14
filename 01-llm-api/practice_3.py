@@ -14,7 +14,7 @@ output_tokens = []
 for _ in range(5):
     t0 = time.time()
     r = client.chat.completions.create(
-        model="openai.English",
+        model="gemma4:e4b",
         max_tokens=200,
         messages = [{"role":"user", "content":"你好！请自我介绍一下。"}]
     )
